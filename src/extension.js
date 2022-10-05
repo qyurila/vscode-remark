@@ -30,7 +30,7 @@ export async function activate(context) {
    * @type {import('vscode-languageclient').LanguageClientOptions}
    */
   const clientOptions = {
-    documentSelector: [{scheme: 'file', language: 'markdown'}],
+    documentSelector: [{scheme: 'file', language: 'markdown'}, {scheme: 'file', language: 'mdx'}],
     synchronize: {
       fileEvents: [
         workspace.createFileSystemWatcher(
